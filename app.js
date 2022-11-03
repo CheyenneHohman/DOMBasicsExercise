@@ -30,9 +30,6 @@ const aTag = document.querySelector(`a`);
 //7b
 aTag.innerHTML = `<a href="https://fandomwire.com/15-greatest-animated-superhero-shows-ever-made-ranked/&quot/">The Best Animated Superhero TV Shows Ever</a>`;
 
-// alternate 7b 
-// aTag.href = `https://fandomwire.com/15-greatest-animated-superhero-shows-ever-made-ranked/&quot/`
-
 //8 
 h1.classList.add(`background`, `text-color`);
 
@@ -81,8 +78,8 @@ let avengers = [
 ];
 
 //14b
-for (i = 0; i < avengers.length, i++) {
+for (a of avengers){
     const spanLoop = document.createElement(`span`);
-    spanLoop.innerText = `${avengers[i]} `;
+    spanLoop.innerText = `${a} `;
     body.append(spanLoop);
 }
